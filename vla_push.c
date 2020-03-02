@@ -6,7 +6,7 @@
 /*   By: aaugusti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 13:06:33 by aaugusti          #+#    #+#             */
-/*   Updated: 2020/03/02 16:21:48 by aaugusti         ###   ########.fr       */
+/*   Updated: 2020/03/02 16:24:30 by aaugusti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ bool	vla_push(t_vla *vla, void *elem, void **result)
 			return (true);
 	new_loc = vla->vla + vla->elem_sz * vla->size;
 	vla_memcpy(new_loc, elem, vla->elem_sz);
-	*result = new_loc;
+	if (result)
+		*result = new_loc;
 	vla->size++;
 	return (false);
 }
