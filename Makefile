@@ -6,13 +6,14 @@
 #    By: aaugusti <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/02 14:51:13 by aaugusti          #+#    #+#              #
-#    Updated: 2020/03/02 14:55:43 by aaugusti         ###   ########.fr        #
+#    Updated: 2020/03/02 18:42:44 by abe              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	libvla.a
 
 SRCS			=	get\
+					get_addr\
 					init\
 					memcpy\
 					push\
