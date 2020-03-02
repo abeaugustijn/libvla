@@ -6,7 +6,7 @@
 /*   By: aaugusti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 11:39:51 by aaugusti          #+#    #+#             */
-/*   Updated: 2020/03/02 14:43:30 by aaugusti         ###   ########.fr       */
+/*   Updated: 2020/03/02 16:22:11 by aaugusti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ typedef struct	s_vla {
 
 void	*vla_memcpy(void *dst, const void *src, size_t n);
 bool	vla_init(size_t elem_sz, size_t init_cap, t_vla *result);
-bool	vla_push(t_vla *vla, void *elem);
+bool	vla_push(t_vla *vla, void *elem, void **result);
 bool	vla_shrink(t_vla *vla);
 bool	vla_resize(t_vla *vla);
 bool	vla_get(t_vla vla, size_t index, void *result);
