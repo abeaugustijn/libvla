@@ -6,7 +6,7 @@
 /*   By: aaugusti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 13:23:42 by aaugusti          #+#    #+#             */
-/*   Updated: 2020/03/02 14:49:22 by aaugusti         ###   ########.fr       */
+/*   Updated: 2020/03/02 21:39:58 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ bool	vla_shrink(t_vla *vla)
 		return (true);
 	}
 	vla_memcpy(vla->vla, old, new_sz);
+	free(old);
 	vla->cap = vla->size;
 	return (false);
 }
