@@ -6,13 +6,11 @@
 /*   By: aaugusti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 13:39:08 by aaugusti          #+#    #+#             */
-/*   Updated: 2020/04/08 19:53:50 by aaugusti         ###   ########.fr       */
+/*   Updated: 2020/04/08 21:40:56 by aaugusti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libvla.h"
-
-#ifndef FAST
 
 /*
 **	Get the address of an element in the VLA.
