@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: aaugusti <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/03/02 14:51:13 by aaugusti          #+#    #+#              #
-#    Updated: 2020/03/07 15:00:42 by abe              ###   ########.fr        #
+#                                                         ::::::::             #
+#    Makefile                                           :+:    :+:             #
+#                                                      +:+                     #
+#    By: aaugusti <aaugusti@student.codam.nl>         +#+                      #
+#                                                    +#+                       #
+#    Created: 2020/10/29 14:19:21 by aaugusti      #+#    #+#                  #
+#    Updated: 2020/10/29 14:19:21 by aaugusti      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,12 +41,9 @@ $(NAME): $(OFILES)
 clean: _clean
 
 fclean: _clean
-	rm -f $(NAME) test
+	rm -f $(NAME)
 
 _clean:
-	rm -f $(OFILES) test.o
+	rm -f $(OFILES)
 
 re: fclean all
-
-test: $(OFILES) test.o
-	gcc -o test $(FLAGS) $(OFILES) test.o -fsanitize=address
